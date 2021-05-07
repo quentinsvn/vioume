@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+  video { 
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+   background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+  .stopfade { 
+     opacity: .5;
+  }
+  
+  #polina { 
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100; 
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 33%;
+    margin:2rem;
+    float: right;
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+  }
+  #polina button { 
+    display: block;
+    width: 80%;
+    padding: .4rem;
+    border: none; 
+    margin: 1rem auto; 
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    border-radius: 3px; 
+    cursor: pointer;
+    transition: .3s background;
+  }
+  #polina button:hover { 
+     background: rgba(0,0,0,0.5);
+  }
+
+  #logo {
+      width: 80px;
+  }
+  #login {
+      background-color: #ff5100;
+      font-size: .8em;
+      padding: 10px;
+      border: none;
+      color: #f3f3f3;
+      font-weight: 500;
+      text-transform: uppercase;
+  }
+
+  #search {
+      margin-right: 20px;
+      background: none;
+      border-color: #f3f3f3;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      color: #f3f3f3;
+  }
+  
+  #search:hover {
+      outline: none;
+  }
+
+  .navbar-nav > li > a {
+      text-transform: uppercase;
+  }
+
+  .content_website {
+    color: #f3f3f3;
+    margin-top: 50px;
+  }
+
+  .content_website h1 {
+      text-align: center;
+      font-weight: 700;
+  }
+
+  .content_website p {
+    text-align: center;
+}
+
+  .navbar-nav > .active {
+    border-bottom: #ff5100 solid 2px;
+  }
+
+  .go-premium {
+    background: -webkit-linear-gradient(#f90,#ffe600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-filter: drop-shadow(0 0 4px #f90);
+    filter: drop-shadow(0 0 4px #ff9900);
+  }
+
+
+  .card-img-overlay {
+    background:rgba(0,0,0,0.6);
+  }
+
+  .play-card:hover {
+    -webkit-transform: scale3d(1.1,1.1,1.1);
+    transform: scale3d(1.1,1.1,1.1);
+    outline: 4px solid #ff5100;
+    -webkit-animation-name: cardHover;
+    animation-name: cardHover;
+    -webkit-filter: drop-shadow(0 0 4rem hsla(0,0%,100%,.45));
+    filter: drop-shadow(0 0 4rem #ffffff73);
+    z-index: 1;
+}
+
+.card-mode {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 15rem;
+    position: relative;
+    border-radius: 2px;
+}
+
+.buildfight {
+    background-image: url('https://www.breakflip.com/uploads/Drui/2020/Fevrier/map-fortnite-saison-2-chapitre-2-carte.jpg');
+}
+
+.tournois {
+    background-image: url('https://i.pinimg.com/736x/89/0b/1e/890b1e7507fbcb85213147901a3b3756.jpg');
+}
+
+.boutique {
+    background-image: url('https://i.pinimg.com/736x/f5/1c/5d/f51c5d95e9b316230a119ae636887f1f.jpg');
+}
+
+.play-card, .play-card:hover {
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+}
+
+.play-card {
+    -webkit-animation-name: cardLeave;
+    animation-name: cardLeave;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-trans {
+    background-color: hsla(0,0%,40%,.23);
+    border-radius: 2px;
+}
+
+.text-card, .trans-card {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(37,37,37,.64)),color-stop(rgba(32,32,32,.9)),to(#0f0f0f));
+    background: linear-gradient(rgba(37,37,37,.64),rgba(32,32,32,.9),#0f0f0f);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.text-card {
+    height: 150px;
+}
+
+.title-card {
+    font-family: Impact,Haettenschweiler,Arial Narrow Bold,sans-serif;
+}
+
+.grey {
+    color: #ccc;
+}
+
+footer {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+
+.social_networks .col {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.discord {
+  background-color: #7289da;
+}
+
+.discord i {
+  color: white;
+}
+
+.youtube {
+  background-color: #c4302b;
+}
+
+.youtube i {
+  color: white;
+}
+
+.twitch {
+  background-color: #6441a5;
+}
+
+.twitch i {
+  color: white;
+}
+
+@media (max-width: 300px) {
+  .content_website h1 {
+    text-align: center;
+    font-size: 10px !important;
+  }
+}
